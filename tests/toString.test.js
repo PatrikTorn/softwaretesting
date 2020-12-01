@@ -1,5 +1,6 @@
 import toString from "../src/toString";
 
+//Bug found
 test("Test is null", () => {
   expect(toString(null)).toBe('');
 });

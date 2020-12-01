@@ -5,5 +5,5 @@ test("Test is [4, 8], square", () => {
         return n * n
     }
     
-  expect(map([4, 8], square)).toBe([16, 64]);
+  expect(map([4, 8], square)).toStrictEqual([16, 64]);
 });

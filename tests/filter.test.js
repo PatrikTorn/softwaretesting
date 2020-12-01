@@ -5,10 +5,10 @@ test("Test filter", () => {
         { 'user': 'barney', 'active': true },
         { 'user': 'fred',   'active': false }
     ]
+
+    const barney = [
+      { 'user': 'barney', 'active': true }
+  ]
     
-  expect(filter(users, ({ active }) => active)).toBe(objectContaining({
-      user: expect.any(String),
-      active: expect(true),      
-    }),
-  );
+  expect(filter(users, ({ active }) => active)).toEqual(expect.objectContaining(barney));
 });
