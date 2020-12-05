@@ -1,6 +1,6 @@
 # Student template
 
-[![Coverage Status](https://coveralls.io/repos/github/PatrikTorn/softwaretesting/badge.svg?branch=master)](https://coveralls.io/github/PatrikTorn/softwaretesting?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/PatrikTorn/softwaretesting/badge.svg?branch=wip/travis)](https://coveralls.io/github/PatrikTorn/softwaretesting?branch=wip/travis)
 
 ## Purpose of this repository
 
