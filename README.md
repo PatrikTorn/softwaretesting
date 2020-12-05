@@ -1,5 +1,7 @@
 # Student template
 
+[![Coverage Status](https://coveralls.io/repos/github/PatrikTorn/softwaretesting/badge.svg?branch=master)](https://coveralls.io/github/PatrikTorn/softwaretesting?branch=master)
+
 ## Purpose of this repository
 
 This is a project template for students participating in Software Testing course
