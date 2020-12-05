@@ -1,5 +1,5 @@
-import chunk from "../src/chunk";
-import { PRODUCT_NAMES } from "./resources/products";
+import chunk from "../../src/chunk";
+import { PRODUCT_NAMES } from "../resources/products";
 
 const PRODUCTS = [
   PRODUCT_NAMES.CUCUMBER,

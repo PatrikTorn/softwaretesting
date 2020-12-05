@@ -1,9 +1,8 @@
-import isBoolean from "../src/isBoolean";
+import isBoolean from "../../src/isBoolean";
 
 test("Test is boolean negative", () => {
   expect(isBoolean("asd")).toBeFalsy();
 });
-
 
 test("Test is boolean negative", () => {
   expect(isBoolean(null)).toBeFalsy();
