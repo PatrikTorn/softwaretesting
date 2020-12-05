@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for src/isSymbol.js</title>
+    <title>Code coverage report for src/defaultTo.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../prettify.css" />
     <link rel="stylesheet" href="../base.css" />
@@ -19,20 +19,20 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">src</a> isSymbol.js</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">src</a> defaultTo.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">75% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>3/4</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
@@ -98,34 +98,34 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">25x</span>
-<span class="cline-any cline-yes">25x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import getTag from './.internal/getTag.js'
-&nbsp;
-/**
- * Checks if `value` is classified as a `Symbol` primitive or object.
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/**
+ * Checks `value` to determine whether a default value should be returned in
+ * its place. The `defaultValue` is returned if `value` is `NaN`, `null`,
+ * or `undefined`.
  *
- * @since 4.0.0
- * @category Lang
+ * @since 4.14.0
+ * @category Util
  * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is a symbol, else `false`.
+ * @param {*} defaultValue The default value.
+ * @returns {*} Returns the resolved value.
  * @example
  *
- * isSymbol(Symbol.iterator)
- * // =&gt; true
+ * defaultTo(1, 10)
+ * // =&gt; 1
  *
- * isSymbol('abc')
- * // =&gt; false
+ * defaultTo(undefined, 10)
+ * // =&gt; 10
  */
-function isSymbol(value) {
-  const type = typeof value
-  return type == 'symbol' || (type === 'object' &amp;&amp; value != null &amp;&amp; <span class="branch-3 cbranch-no" title="branch not covered" >getTag(value) == '[object Symbol]')</span>
+function defaultTo(value, defaultValue) {
+  return value == null ? defaultValue : value
 }
 &nbsp;
-export default isSymbol
+export default defaultTo
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
