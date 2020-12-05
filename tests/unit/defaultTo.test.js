@@ -1,4 +1,4 @@
-import defaultTo from "../src/defaultTo";
+import defaultTo from "../../src/defaultTo";
 
 test("Test 'defaultTo' method when product has the price", () => {
   expect(defaultTo(0, 10)).toEqual(0);

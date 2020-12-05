@@ -1,5 +1,5 @@
-import countBy from "../src/countBy";
-import { PRODUCTS_LIST, PRODUCT_CATEGORIES } from "./resources/products";
+import countBy from "../../src/countBy";
+import { PRODUCTS_LIST, PRODUCT_CATEGORIES } from "../resources/products";
 
 const products = [
   { name: "chicken", outOfStock: true },

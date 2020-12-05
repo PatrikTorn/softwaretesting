@@ -1,10 +1,10 @@
-import at from "../src/at";
+import at from "../../src/at";
 import {
   PRODUCTS_LIST,
   PRODUCT_CATEGORIES,
   PRODUCT_NAMES,
   PRODUCT_PRICES,
-} from "./resources/products";
+} from "../resources/products";
 
 test("Test shopping cart with found product names by method 'at'", () => {
   expect(

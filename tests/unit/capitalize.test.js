@@ -1,4 +1,4 @@
-import capitalize from "../src/capitalize";
+import capitalize from "../../src/capitalize";
 
 test("Test 'capitalize' method positive cases", () => {
   expect(capitalize("cucumber")).toEqual("Cucumber");

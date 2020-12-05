@@ -1,10 +1,10 @@
-import get from "../src/get";
+import get from "../../src/get";
 import {
   PRODUCTS_LIST,
   PRODUCT_CATEGORIES,
   PRODUCT_NAMES,
   PRODUCT_PRICES,
-} from "./resources/products";
+} from "../resources/products";
 
 test("Test 'get' method to find product", () => {
   expect(get(PRODUCTS_LIST, "[0].products[0].name")).toEqual(
